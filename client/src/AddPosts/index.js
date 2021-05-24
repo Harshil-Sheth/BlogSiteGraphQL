@@ -1,0 +1,1 @@
+export { AddPosts as default } from './AddPosts';
