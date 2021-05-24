@@ -10,6 +10,7 @@ import './new.css'
 import { GlobalProvider } from './globalContext';
 import Posts from './Posts/Posts';
 import CreateArticals from './AddPosts/AddPosts';
+import Header from "./Header";
 
 const client = new ApolloClient({
   uri: "http://localhost:8000/graphql",
@@ -20,7 +21,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <GlobalProvider><div >
-        <h2>BlogSite</h2>
+      <Header/>
         <div className='new'>
           <CreateArticals />
         </div>

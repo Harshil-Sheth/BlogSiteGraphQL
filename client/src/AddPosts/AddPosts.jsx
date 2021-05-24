@@ -1,6 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 import { useMutation, gql } from '@apollo/client';
 import { GlobalContext } from '../globalContext';
+import AddIcon from "@material-ui/icons/Add";
+
 function AddPosts() {
   const { createQuery } = useContext(GlobalContext);
   let inputtitle, inputcontent;
@@ -23,8 +25,8 @@ function AddPosts() {
 
   return (
     <div>
-      <h2>Add Post</h2>
-      <form
+      <form 
+      className="create-note tc"
         onSubmit={(e) => {
           e.preventDefault();
           postCreated({
@@ -36,22 +38,28 @@ function AddPosts() {
         }}
       >
         <div>
-          <label>Title</label>
-          <input
+        <input
+          className="grow tc"
+            name="title"
+            placeholder="Title"
             ref={(node) => {
               inputtitle = node;
             }}
           />
+         
         </div>
         <div>
-          <label>Content</label>
-          <input
-            ref={(node) => {
+        <textarea
+          className="grow tc "
+          name="content"
+          placeholder="Take a note..."
+          rows='3'
+          ref={(node) => {
               inputcontent = node;
             }}
-          />
+        />
         </div>
-        <button type="submit">Add Post</button>
+        <button type="submit"><AddIcon /></button>
       </form>
     </div>
   );

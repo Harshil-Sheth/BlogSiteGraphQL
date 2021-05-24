@@ -7,11 +7,14 @@
   "main": "src/index.js",
   "dependencies": {
     "@apollo/client": "3.0.0-rc.3",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "dotenv": "^10.0.0",
     "graphql": "latest",
     "react": "16.13.0",
     "react-dom": "16.13.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^3.4.3",
+    "tachyons": "^4.12.0"
   },
   "devDependencies": {},
   "scripts": {

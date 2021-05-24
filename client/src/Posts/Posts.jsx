@@ -23,7 +23,7 @@ function Posts() {
   if (error) return <p>Error : {error}</p>;
   return posts ? 
   posts.map(({ id, title, content }) => (
-      <div className="artical" key={id}>
+      <div className="artical note tc helvetica" key={id}>
         <h2>{title}</h2>
         <p>{content}</p>
       </div>
