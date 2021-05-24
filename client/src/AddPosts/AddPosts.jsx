@@ -52,7 +52,7 @@ function AddPosts() {
         <textarea
           className="grow tc "
           name="content"
-          placeholder="Take a note..."
+          placeholder="Add Description..."
           rows='3'
           ref={(node) => {
               inputcontent = node;

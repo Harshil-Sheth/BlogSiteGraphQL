@@ -6,6 +6,7 @@ import {
   ApolloProvider,
 } from "@apollo/client";
 import './new.css'
+import "tachyons";
 
 import { GlobalProvider } from './globalContext';
 import Posts from './Posts/Posts';
