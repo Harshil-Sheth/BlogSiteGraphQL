@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 
-const pubsub = new PubSub();
-const POST_CREATED = 'POST_CREATED';
+// const pubsub = new PubSub();
+// const POST_CREATED = 'POST_CREATED';
 const posts = [
   {
     id: 0,

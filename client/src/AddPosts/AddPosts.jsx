@@ -59,7 +59,7 @@ function AddPosts() {
             }}
         />
         </div>
-        <button type="submit"><AddIcon /></button>
+        <button type="submit" className="grow tc "><AddIcon /></button>
       </form>
     </div>
   );
